@@ -44,16 +44,16 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		//alert("not fit_count is " + not fit_count); I wanted to further clarify that the alert is displaying the count for not fit_count, but this code is now irrelevant
         }
 
-        function WelderAdd(){
-            Welder_count = Welder_count + 1;//this function is used to add an additional count to Welder_count each time it is called
+        function welderAdd(){
+            welder_count = welder_count + 1;//this function is used to add an additional count to welder_count each time it is called
 		//alert("Welder_count is " + Welder_count); I wanted to add further clarify that the alert is displaying the count for Welder_count, but this code is now irrelevant
         }
 
 	function outputResults(){
-		var percent_not fit = not fit_count/(not fit_count + Welder_count)*100; // This line converts the not fit_count into a percentage
-		var percent_Welder = Welder_count/(not fit_count + Welder_count)*100; // This line converts the Welder_count into a percentage
+		var percent_not fit = not fit_count/(not fit_count + welder_count)*100; // This line converts the not fit_count into a percentage
+		var percent_Welder = welder_count/(not fit_count + welder_count)*100; // This line converts the welder_count into a percentage
 		var resultsText = document.getElementById("resultsLocation"); // creates a java script link between the variable called "resultsText" and the page element with id of resultsLocation
-		resultsLocation.innerHTML = "Probability it is allergies = " + percent_not fit + "% <br> Probability it is a Welder = " + percent_Welder + "%" //This line replaces the text from the Results Page with the diagnosis
+		resultsLocation.innerHTML = "Probability it is allergies = " + percent_not fit + "% <br> Probability it is a welder = " + percent_welder + "%" //This line replaces the text from the Results Page with the diagnosis
 	}
 
   </script>
