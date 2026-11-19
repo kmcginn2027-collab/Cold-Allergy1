@@ -44,13 +44,13 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 
         function notfitAdd(){
-            notfitr_count = notfit_count + 1;//this function is used to add an additional count to notfit_count each time it is called
+            notfit_count = notfit_count + 1;//this function is used to add an additional count to notfit_count each time it is called
 		//alert("notfit_count is " + notfit_count); I wanted to add further clarify that the alert is displaying the count for notfit_count, but this code is now irrelevant
         }
 
 	function outputResults(){
-		var percent_notfit = wlder_count/(notfit_count + welder_count)*100; // This line converts the not fit_count into a percentage
-		var percent_Welder = notfit_count/(notfit_count + welder_count)*100; // This line converts the welder_count into a percentage
+		var percent_welder = welder_count/(notfit_count + welder_count)*100; // This line converts the not fit_count into a percentage
+		var percent_notfit = notfit_count/(notfit_count + welder_count)*100; // This line converts the welder_count into a percentage
 		var resultsText = document.getElementById("resultsLocation"); // creates a java script link between the variable called "resultsText" and the page element with id of resultsLocation
 		resultsLocation.innerHTML = "Probability it is allergies = " + percent_not fit + "% <br> Probability it is a welder = " + percent_welder + "%" //This line replaces the text from the Results Page with the diagnosis
 	}
@@ -83,11 +83,11 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
-	<h1>Welder or Allergies?</h1> 
+	<h1>Welder or Not?</h1> 
 </div>
 <!--this section displays the content that the user sees immediately upon opening the website-->
 <div id="content" class="w3-container">
-	<p>Are you feeling like you might have a Welder but wonder if it is allergies. Answer a few short questions to find out!</p> <!--Introduce the user to the website-->
+	<p>Are you feeling like you might be a Welder but wonder if you are not? Answer a few short questions to find out!</p> <!--Introduce the user to the website-->
 
 	<a href="#one" class="w3-btn w3-grey w3-round"> Get Started </a> <!-- this line presents the first button that users click to proceed to page one-->
 	
