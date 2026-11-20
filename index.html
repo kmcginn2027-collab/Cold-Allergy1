@@ -3,7 +3,8 @@
 <!-- The following code has been developed by students and/or researchers of the Freshman Research Initiative DIY Diagnostics Stream at The University of Texas at Austin.  This code is shared for demonstration purposes and should not be considered a product -- it is for entertainment purposes only.  Any user of this code does so at their own risk. Members of the DIY Stream, FRI, and The University of Texas system are not liable for anything related to this code.
  
 THIS CODE SHOULD NOT BE USED TO DETERIME IF YOUR FIT TO BE A WELDER.
- 
+
+	
 Authors in chronological order of contribution:
 Tim Riedel
 Author 2
@@ -52,7 +53,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		var percent_welder = welder_count/(notfit_count + welder_count)*100; // This line converts the not fit_count into a percentage
 		var percent_notfit = notfit_count/(notfit_count + welder_count)*100; // This line converts the welder_count into a percentage
 		var resultsText = document.getElementById("resultsLocation"); // creates a java script link between the variable called "resultsText" and the page element with id of resultsLocation
-		resultsLocation.innerHTML = "Probability it is allergies = " + percent_not fit + "% <br> Probability it is a welder = " + percent_welder + "%" //This line replaces the text from the Results Page with the diagnosis
+		resultsLocation.innerHTML = "Probability you are not fit to weld = " + percent_notfit + "% <br> Probability you can be a welder = " + percent_welder + "%" //This line replaces the text from the Results Page with the diagnosis
 	}
 
   </script>
@@ -104,7 +105,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 	
     	<div id="content" class="w3-container"> <!--creating the question and buttons for Q1-->
 		<p>have you ever welded before?</p> <!--I asked the question for Question 1 (Q1) here.-->  
-		<a href="#two" onclick="WelderAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (Watery) button for Q1. If clicked, adds one to welder_count-->
+		<a href="#two" onclick="welderAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (Watery) button for Q1. If clicked, adds one to welder_count-->
 		<a href="#two" onclick="notfitAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No (Itchy) button for Q1. If clicked, adds one to notfit_count-->
 	</div>
 </div>
@@ -143,7 +144,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 	<div id="content" class="w3-container">
 		<p>Can you handle extreme heat or cold depending on the shop or jobsite?</p> <!--I asked the question for Q4 here.--> 
-		<a href="#five" onclick="WelderAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (Seasonal) button for Q4. If clicked, adds one to welder_count-->
+		<a href="#five" onclick="welderAdd();" class="w3-btn w3-orange"> Yes </a> <!-- Create Yes (Seasonal) button for Q4. If clicked, adds one to welder_count-->
 		<a href="#five" onclick="notfitAdd();" class="w3-btn w3-orange"> No </a> <!-- Create No (Chronic) button for Q4. If clicked, adds one to notfit_count-->
 	</div>
 </div>
